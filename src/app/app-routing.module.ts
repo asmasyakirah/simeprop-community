@@ -23,6 +23,14 @@ const routes: Routes = [
     path: 'visitor',
     loadChildren: () => import('./visitor/visitor.module').then( m => m.VisitorPageModule)
   },
+  {
+    path: 'visitor-add',
+    loadChildren: () => import('./visitor-add/visitor-add.module').then( m => m.VisitorAddPageModule)
+  },
+  {
+    path: 'visitor-edit',
+    loadChildren: () => import('./visitor-edit/visitor-edit.module').then( m => m.VisitorEditPageModule)
+  },
 ];
 
 @NgModule({
