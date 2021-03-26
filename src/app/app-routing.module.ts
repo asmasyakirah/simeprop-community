@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'visitor-edit',
     loadChildren: () => import('./visitor-edit/visitor-edit.module').then( m => m.VisitorEditPageModule)
   },
+  {
+    path: 'visitors',
+    loadChildren: () => import('./visitors/visitors.module').then( m => m.VisitorsPageModule)
+  },
 ];
 
 @NgModule({
