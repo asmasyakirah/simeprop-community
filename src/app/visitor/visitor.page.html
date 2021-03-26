@@ -1,9 +1,42 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>visitor</ion-title>
+  <ion-toolbar>    
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="visitors"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Visitor</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-item>
+    <ion-label position="stacked">House</ion-label>
+    <ion-label>{{visitorData.house}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Name</ion-label>
+    <ion-label>{{visitorData.name}}</ion-label>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="stacked">Vehicle Plate No</ion-label>
+    <ion-label>{{visitorData.plateno}}</ion-label>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="stacked">Mobile Number</ion-label>
+    <ion-label>{{visitorData.mobileno}}</ion-label>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="stacked">Entry Type</ion-label>
+    <ion-label>{{visitorData.entry}}</ion-label>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="stacked">Entry Date</ion-label>
+    <ion-label>{{visitorData.entrydate}}</ion-label>
+  </ion-item>
 
 </ion-content>

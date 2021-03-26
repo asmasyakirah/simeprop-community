@@ -18,4 +18,9 @@ export class DashboardPage implements OnInit {
     this.router.navigate(['property', id]);
   }
 
+  getVisitors()
+  {
+    this.router.navigate(['visitors']);
+  }
+
 }

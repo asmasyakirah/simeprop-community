@@ -20,7 +20,7 @@ const routes: Routes = [
     loadChildren: () => import('./property/property.module').then( m => m.PropertyPageModule)
   },
   {
-    path: 'visitor',
+    path: 'visitor/:id',
     loadChildren: () => import('./visitor/visitor.module').then( m => m.VisitorPageModule)
   },
   {
@@ -28,7 +28,7 @@ const routes: Routes = [
     loadChildren: () => import('./visitor-add/visitor-add.module').then( m => m.VisitorAddPageModule)
   },
   {
-    path: 'visitor-edit',
+    path: 'visitor-edit/:id',
     loadChildren: () => import('./visitor-edit/visitor-edit.module').then( m => m.VisitorEditPageModule)
   },
   {

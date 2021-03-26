@@ -1,0 +1,22 @@
+[  
+    {
+        "id": 1,
+        "house":"Reesia, Street 1",
+        "name":"Rohaya",
+        "plateno":"WRH1234",
+        "mobileno":"0192828258",
+        "entry":"Single Entry",
+        "entrydate":"2020-03-25",
+        "approvaluponarrival": true
+    },  
+    {
+        "id": 2,
+        "house":"Reesia, Street 1",
+        "name":"Dzulkefli",
+        "plateno":"WRH1234",
+        "mobileno":"0193838348",
+        "entry":"Single Entry",
+        "entrydate":"2020-03-25",
+        "approvaluponarrival": true
+    }
+]  
