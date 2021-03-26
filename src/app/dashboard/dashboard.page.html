@@ -1,9 +1,176 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Dashboard</ion-title>
-  </ion-toolbar>
+  <!-- <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar> -->
 </ion-header>
 
 <ion-content>
+
+  <div id="container">
+
+    <ion-grid 
+      style="
+      background: linear-gradient(to bottom left, #E53032, #F6A909);
+      padding: 15px;
+      padding-top: 80px;
+      padding-bottom: 25px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;">
+      <ion-row class="ion-align-items-start">
+        <ion-col>
+          <ion-card-subtitle color="light">Welcome</ion-card-subtitle>
+          <ion-card-title color="light">Asma' Syakirah</ion-card-title>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-card 
+      style="margin-top: -15px;">        
+        <ion-grid [fixed]="true">
+          <ion-row>
+            <ion-col size="3">
+
+              <ion-tab-button tab="speakers">
+                <ion-icon name="person-add-outline"></ion-icon>
+                <ion-label>Visitor Entry</ion-label>
+              </ion-tab-button>
+           
+            </ion-col>
+            <ion-col size="3">
+
+              <ion-tab-button tab="speakers">
+                <ion-icon name="id-card-outline"></ion-icon>
+                <ion-label>My Visitors</ion-label>
+              </ion-tab-button>
+
+            </ion-col>
+            <ion-col size="3">
+
+              <ion-tab-button tab="speakers">
+                <ion-icon name="card-outline"></ion-icon>
+                <ion-label>Pay Bills</ion-label>
+              </ion-tab-button>
+                
+            </ion-col>
+            <ion-col size="3">
+
+              <ion-tab-button tab="speakers">
+                <ion-icon name="notifications-outline"></ion-icon>
+                <ion-label>Notifications</ion-label>
+                <ion-badge>3</ion-badge>
+              </ion-tab-button>
+
+            </ion-col>
+          </ion-row>
+          </ion-grid>
+    </ion-card>
+  
+    <ion-grid 
+      style="padding: 0px 15px;">
+      <ion-row class="ion-align-items-start">
+        <ion-col>          
+            
+          <ion-toolbar>          
+          <label slot="start">Services</label>
+          </ion-toolbar>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+  
+                <ion-tab-button tab="speakers">
+                  <ion-icon name="person-circle-outline"></ion-icon>
+                  <ion-label>Family</ion-label>
+                </ion-tab-button>
+             
+              </ion-col>
+              <ion-col>
+  
+                <ion-tab-button tab="speakers">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                  <ion-label>Visits</ion-label>
+                </ion-tab-button>
+  
+              </ion-col>
+              <ion-col></ion-col>
+              <ion-col></ion-col>
+            </ion-row>
+          </ion-grid>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-grid 
+      style="padding: 0px 15px;">
+      <ion-row class="ion-align-items-start">
+        <ion-col>          
+            
+          <ion-toolbar>          
+          <label slot="start">Properties</label>
+            <ion-buttons slot="end">
+              <ion-button>
+                <text style="font-size: small;">More</text>
+              </ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col>  
+
+                <ion-card style="margin: 0px;">
+                  <img src="../../assets/img/reesia.jpg" />
+                  <ion-item href="#">
+                    <ion-label>Reesia, Street 1</ion-label>
+                  </ion-item>
+                </ion-card>
+                
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-grid 
+      style="
+      padding: 0px 15px 15px 15px;
+      margin-bottom: 30px;">
+      <ion-row class="ion-align-items-start">
+        <ion-col>          
+            
+          <ion-toolbar>          
+          <label slot="start">Announcements</label>
+            <ion-buttons slot="end">
+              <ion-button>
+                <text style="font-size: small;">More</text>
+              </ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+
+          <ion-grid>
+            <ion-row> 
+                
+              <ion-card style="margin: 0px;">
+                <img src="../../assets/img/announcement2.jpg" />               
+                <ion-item href="#">
+                  <ion-label>Find Out More</ion-label>
+                </ion-item>
+              </ion-card>
+                
+            </ion-row>
+          </ion-grid>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    </div>
 
 </ion-content>
