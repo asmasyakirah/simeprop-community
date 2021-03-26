@@ -16,7 +16,7 @@ const routes: Routes = [
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
   {
-    path: 'property',
+    path: 'property/:id',
     loadChildren: () => import('./property/property.module').then( m => m.PropertyPageModule)
   },
 ];

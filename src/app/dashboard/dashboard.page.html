@@ -35,7 +35,7 @@
             <ion-col size="3">
 
               <ion-tab-button tab="speakers">
-                <ion-icon name="person-add-outline"></ion-icon>
+                <ion-icon name="person-add-outline" color="primary"></ion-icon>
                 <ion-label>Visitor Entry</ion-label>
               </ion-tab-button>
            
@@ -43,7 +43,7 @@
             <ion-col size="3">
 
               <ion-tab-button tab="speakers">
-                <ion-icon name="id-card-outline"></ion-icon>
+                <ion-icon name="id-card-outline" color="primary"></ion-icon>
                 <ion-label>My Visitors</ion-label>
               </ion-tab-button>
 
@@ -51,7 +51,7 @@
             <ion-col size="3">
 
               <ion-tab-button tab="speakers">
-                <ion-icon name="card-outline"></ion-icon>
+                <ion-icon name="card-outline" color="primary"></ion-icon>
                 <ion-label>Pay Bills</ion-label>
               </ion-tab-button>
                 
@@ -59,7 +59,7 @@
             <ion-col size="3">
 
               <ion-tab-button tab="speakers">
-                <ion-icon name="notifications-outline"></ion-icon>
+                <ion-icon name="notifications-circle-outline" color="primary"></ion-icon>
                 <ion-label>Notifications</ion-label>
                 <ion-badge>3</ion-badge>
               </ion-tab-button>
@@ -83,7 +83,7 @@
               <ion-col>
   
                 <ion-tab-button tab="speakers">
-                  <ion-icon name="person-circle-outline"></ion-icon>
+                  <ion-icon name="person-circle-outline" color="primary"></ion-icon>
                   <ion-label>Family</ion-label>
                 </ion-tab-button>
              
@@ -91,7 +91,7 @@
               <ion-col>
   
                 <ion-tab-button tab="speakers">
-                  <ion-icon name="analytics-outline"></ion-icon>
+                  <ion-icon name="analytics-outline" color="primary"></ion-icon>
                   <ion-label>Visits</ion-label>
                 </ion-tab-button>
   
@@ -125,7 +125,7 @@
 
                 <ion-card style="margin: 0px;">
                   <img src="../../assets/img/reesia.jpg" />
-                  <ion-item [routerLink]="['/property']">
+                  <ion-item (click)="getProperty(1)">
                     <ion-label>Reesia, Street 1</ion-label>
                   </ion-item>
                 </ion-card>
@@ -159,7 +159,7 @@
                 
               <ion-card style="margin: 0px;">
                 <img src="../../assets/img/announcement2.jpg" />               
-                <ion-item href="#">
+                <ion-item>
                   <ion-label>Find Out More</ion-label>
                 </ion-item>
               </ion-card>

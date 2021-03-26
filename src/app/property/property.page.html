@@ -8,5 +8,108 @@
 </ion-header>
 
 <ion-content>
+  <img src="../../assets/img/reesia.jpg" style="margin: 0px;"/> 
+   
+  <ion-grid 
+    style="padding: 0px 15px 15px 15px;
+    margin-bottom: 30px;">
+    <ion-row class="ion-align-items-start">
+      <ion-col>          
+          
+        <ion-toolbar>          
+        <label slot="start">{{propertyData.name}}</label>
+        </ion-toolbar>
+
+        <ion-card>
+          
+          <ion-card-header style="padding: 0px 0px 0px 16px;">
+            <ion-toolbar>          
+              <label slot="start">Family Members</label>
+                <ion-buttons slot="end">
+                  <ion-button>
+                    <ion-icon name="add" color="primary"></ion-icon>
+                  </ion-button>
+                  <ion-button>
+                    <ion-icon name="filter-outline" color="primary"></ion-icon>
+                  </ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+          
+          </ion-card-header>
+        
+          <ion-list style="padding: 0px;">
+            <ion-item>
+              <ion-label>Nasrul Mubin</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Asma' Syakirah</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Muhd Ayyash</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Muhd Zharif</ion-label>
+            </ion-item>
+          </ion-list>
+
+        </ion-card>
+
+        <ion-card>
+          
+          <ion-card-header style="padding: 0px 0px 0px 16px;">
+            <ion-toolbar>          
+              <label slot="start">Latest Bills</label>
+                <ion-buttons slot="end">
+                  <ion-button>
+                    <label style="font-size: small;">More</label>
+                  </ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+          
+          </ion-card-header>
+        
+          <ion-list style="padding: 0px;">
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="../../assets/icon/document-outline.svg">
+              </ion-avatar>
+              <ion-label>
+                <h2 color="primary">Inv-123</h2>
+                <h3>Maintenance Fee</h3>
+                <h5>17:35 1/3/2021</h5>
+                <p>RM1,000</p>
+              </ion-label>
+              <ion-badge color="warning">Pending</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="../../assets/icon/document-outline.svg">
+              </ion-avatar>
+              <ion-label>
+                <h2 color="primary">Inv-122</h2>
+                <h3>Maintenance Fee</h3>
+                <h5>17:35 1/2/2021</h5>
+                <p>RM100</p>
+              </ion-label>
+              <ion-badge color="success">Paid</ion-badge>
+            </ion-item>
+          </ion-list>
+
+        </ion-card>
+        
+        <ion-item>
+          <ion-label>Set as default</ion-label>
+          <ion-toggle slot="start" name="setDefault" checked>            
+          </ion-toggle><ion-icon name="information-circle-outline"></ion-icon>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>Receive approval</ion-label>
+          <ion-toggle slot="start" name="receiveApproval" checked></ion-toggle>
+        </ion-item>
+
+        </ion-col>
+      </ion-row>
+  </ion-grid>
 
 </ion-content>
