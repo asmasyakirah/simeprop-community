@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
+  {
+    path: 'property',
+    loadChildren: () => import('./property/property.module').then( m => m.PropertyPageModule)
+  },
 ];
 
 @NgModule({
