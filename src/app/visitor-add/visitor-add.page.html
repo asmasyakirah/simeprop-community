@@ -1,9 +1,47 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>visitor-add</ion-title>
+  <ion-toolbar>    
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Visitor</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <form #form="ngForm" (ngSubmit)="saveForm(form)" novalidate>
+
+  <ion-item>
+    <ion-label position="stacked">House</ion-label>
+    <ion-input name="house" ngModel></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Name</ion-label>
+    <ion-input name="name" ngModel></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="stacked">Vehicle Plate No</ion-label>
+    <ion-input name="plateno" ngModel></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="stacked">Mobile Number</ion-label>
+    <ion-input name="mobileno" ngModel></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="stacked">Entry Type</ion-label>
+    <ion-input name="entry" ngModel></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="stacked">Entry Date</ion-label>
+    <ion-input name="entrydate" ngModel></ion-input>
+  </ion-item>
+
+  <ion-button type="submit" expand="block" style="margin: 15px;">Submit</ion-button>
+  </form>
 
 </ion-content>

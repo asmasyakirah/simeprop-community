@@ -18,5 +18,45 @@
         "entry":"Single Entry",
         "entrydate":"2020-03-25",
         "approvaluponarrival": true
+    },  
+    {
+        "id": 3,
+        "house":"Reesia, Street 1",
+        "name":"Rozita",
+        "plateno":"WRH1234",
+        "mobileno":"0193456341",
+        "entry":"Single Entry",
+        "entrydate":"2020-03-20",
+        "approvaluponarrival": true
+    },  
+    {
+        "id": 4,
+        "house":"Reesia, Street 1",
+        "name":"Anas",
+        "plateno":"KTN4234",
+        "mobileno":"0133082251",
+        "entry":"Single Entry",
+        "entrydate":"2020-03-15",
+        "approvaluponarrival": true
+    },  
+    {
+        "id": 5,
+        "house":"Reesia, Street 1",
+        "name":"Azreen",
+        "plateno":"WKK1234",
+        "mobileno":"0193000348",
+        "entry":"Single Entry",
+        "entrydate":"2020-03-22",
+        "approvaluponarrival": true
+    },  
+    {
+        "id": 6,
+        "house":"Reesia, Street 1",
+        "name":"Sarah",
+        "plateno":"WRH1234",
+        "mobileno":"0134563728",
+        "entry":"Single Entry",
+        "entrydate":"2020-03-01",
+        "approvaluponarrival": true
     }
 ]  

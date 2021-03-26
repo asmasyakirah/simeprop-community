@@ -9,34 +9,39 @@
 
 <ion-content>
 
+  <form #form="ngForm" (ngSubmit)="saveForm(form)" novalidate>
+
   <ion-item>
     <ion-label position="stacked">House</ion-label>
-    <ion-input>{{visitorData.house}}</ion-input>
+    <ion-input name="house" ngModel>{{visitorData.house}}</ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="stacked">Name</ion-label>
-    <ion-input>{{visitorData.name}}</ion-input>
+    <ion-input name="name" ngModel>{{visitorData.name}}</ion-input>
   </ion-item>
   
   <ion-item>
     <ion-label position="stacked">Vehicle Plate No</ion-label>
-    <ion-input>{{visitorData.plateno}}</ion-input>
+    <ion-input name="plateno" ngModel>{{visitorData.plateno}}</ion-input>
   </ion-item>
   
   <ion-item>
     <ion-label position="stacked">Mobile Number</ion-label>
-    <ion-input>{{visitorData.mobileno}}</ion-input>
+    <ion-input name="mobileno" ngModel>{{visitorData.mobileno}}</ion-input>
   </ion-item>
   
   <ion-item>
     <ion-label position="stacked">Entry Type</ion-label>
-    <ion-input>{{visitorData.entry}}</ion-input>
+    <ion-input name="entry" ngModel>{{visitorData.entry}}</ion-input>
   </ion-item>
   
   <ion-item>
     <ion-label position="stacked">Entry Date</ion-label>
-    <ion-input>{{visitorData.entrydate}}</ion-input>
+    <ion-input name="entrydate" ngModel>{{visitorData.entrydate}}</ion-input>
   </ion-item>
+
+  <ion-button type="submit" expand="block" style="margin: 15px;">Submit</ion-button>
+  </form>
 
 </ion-content>

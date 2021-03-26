@@ -8,10 +8,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PropertyPage implements OnInit {
 
-  data: any;
-  dataProperty: any;
   propertyId: number;
   propertyData: any = {};
+  propertiesData: any;
 
   constructor(private activatedRoute: ActivatedRoute) 
   {
@@ -29,8 +28,8 @@ export class PropertyPage implements OnInit {
   {    
     fetch('../../assets/data/data-properties.json').then(res => res.json())
     .then(json => {
-      this.data = json;
-      console.log(this.data);
+      this.propertiesData = json;
+      console.log(this.propertiesData);
     });
   }
 
@@ -39,8 +38,8 @@ export class PropertyPage implements OnInit {
     fetch('../../assets/data/data-properties.json').then(res => res.json())
     .then(json => {
       const pId = this.propertyId;
-      this.data = json;
-      this.data.forEach((value: { id: number; }) => {
+      this.propertiesData = json;
+      this.propertiesData.forEach((value: { id: number; }) => {
         if(value.id==pId)
         {
           this.propertyData = value;

@@ -38,5 +38,10 @@ export class VisitorEditPage implements OnInit {
       });
     });
   }
+  
+  saveForm(form: any) 
+  {
+    console.log(form.value);
+  }
 
 }

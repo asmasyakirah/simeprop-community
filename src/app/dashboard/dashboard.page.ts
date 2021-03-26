@@ -23,4 +23,9 @@ export class DashboardPage implements OnInit {
     this.router.navigate(['visitors']);
   }
 
+  addVisitor()
+  {
+    this.router.navigate(['visitor-add']);
+  }
+
 }

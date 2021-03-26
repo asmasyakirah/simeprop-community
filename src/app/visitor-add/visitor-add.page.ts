@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-visitor-add',
   templateUrl: './visitor-add.page.html',
@@ -7,9 +6,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VisitorAddPage implements OnInit {
 
-  constructor() { }
+  constructor() 
+  { }
 
   ngOnInit() {
   }
+  
+  saveForm(form: any) 
+  {
+    console.log(form.value);
+  }
 
+  
 }
